@@ -3,27 +3,113 @@
     margin: 0
 }
 
+
+body{
+    background-color:  #141415;
+}
+
+
 .logo{
     width: 5vw;
     height: 5vw;
     padding: 5px;
 }
 
+
 .menu{
-    background-color: black;
+    background-color:black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 4px solid #F5B60A;
 }
 
-.itens{
-    list-style: none;
-    
+.itens a{
+    text-decoration: none;
+    color: #F5B60A;
+    font-family: century gothic;
+    font-weight: bold;
+    font-size: 20px;
 }
-
+.itens a:hover{color: rgb(190, 162, 0);}
 .itens li{
     display: inline-block;
     padding: 15px;
 }
 
+
+.carrossel{
+    margin: 15px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.carrossel img{
+    border-radius: 20px;
+    border-image-width: 15px;
+    border: 6px solid #F5B60A;
+}
+
+
+.titulocat{
+    font-family: century gothic;
+    color: #F5B60A;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.imagens{
+    text-align: center;
+    background-color: #232327;
+    padding: 15px;
+    margin-left: 170px;
+    margin-right: 170px;
+    border-radius: 20px;
+}
+.imagens a{
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+}
+.imagens a:hover{color: #F5B60A}
+.imagens li{
+    color: white;
+    font-family: century gothic;
+    font-weight: bold;
+    font-size: 20px;
+    display:inline-block;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.imagens img{
+    width: 15vw;
+    height: 15vw;
+    display:grid;
+    border-radius: 15px;
+    border: 4px solid #F5B60A;
+    margin-bottom: 15px;
+}
+
+
+.contatos{
+    font-family: century gothic;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+.titulocat2{
+    font-size: 14px;
+    font-family: century gothic;
+    color: #F5B60A;
+    padding: 10px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+.copyright{
+    text-align: center;
+    color: #F5B60A;
+    font-family: century gothic;
+    padding: 30px;
+    font-size: 18px;
+}
 
