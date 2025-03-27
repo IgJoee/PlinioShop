@@ -24,6 +24,20 @@ body{
     border-bottom: 4px solid #F5B60A;
 }
 
+.itens button{
+    background-color: #F5B60A;
+    border-style: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    color:#141415;
+    font-family: century gothic;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.itens button:hover{background-color:  rgb(255, 217, 0);}
+
 .itens a{
     text-decoration: none;
     color: #F5B60A;
@@ -31,23 +45,43 @@ body{
     font-weight: bold;
     font-size: 20px;
 }
-.itens a:hover{color: rgb(190, 162, 0);}
+.itens a:hover{color: rgb(255, 217, 0);}
 .itens li{
     display: inline-block;
     padding: 15px;
 }
 
 
-.carrossel{
+.banner{
     margin: 15px;
     padding-left: 20px;
     padding-top: 10px;
+    cursor: pointer;
 }
-.carrossel img{
+.carrossel{
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.slide{
+    flex: 1;
+    min-width: 100%;
+}
+
+.slide img{
     border-radius: 20px;
     border-image-width: 15px;
     border: 6px solid #F5B60A;
+    object-fit: cover;
 }
+
+@keyframes slide{
+    0%, 30%{transform:translateX(0)};
+    33%, 63%{transform:translateX(-100%)};
+    66%, 96%{transform:translateX(-200%)};
+    100%{transform:translateX(0)}
+}
+
 
 
 .titulocat{
