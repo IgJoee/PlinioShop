@@ -53,14 +53,14 @@ body{
 
 
 .banner{
-    margin: 15px;
-    padding-left: 20px;
     padding-top: 10px;
+    padding-left: 13px;
     cursor: pointer;
 }
 .carrossel{
     display: flex;
-    animation: slide 10s infinite;
+    animation: slide 9s infinite;
+    position: relative;
 }
 
 .slide{
@@ -72,17 +72,15 @@ body{
     border-radius: 20px;
     border-image-width: 15px;
     border: 6px solid #F5B60A;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 @keyframes slide{
-    0%, 30%{transform:translateX(0)};
-    33%, 63%{transform:translateX(-100%)};
-    66%, 96%{transform:translateX(-200%)};
-    100%{transform:translateX(0)}
+    0%, 30%{transform:translateX(0);}
+    33%, 60%{transform:translateX(-100%);}
+    66%, 90%{transform:translateX(-200%);}
+    100%{transform:translateX(0);}
 }
-
-
 
 .titulocat{
     font-family: century gothic;
@@ -125,9 +123,13 @@ body{
 
 .contatos{
     font-family: century gothic;
-    text-align: center;
     color: white;
     font-size: 14px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 200px;
+    padding-left: 50px;
 }
 .titulocat2{
     font-size: 14px;
@@ -145,5 +147,52 @@ body{
     font-family: century gothic;
     padding: 30px;
     font-size: 18px;
+}
+
+.titulocat3{
+    font-size: 14px;
+    font-family: century gothic;
+    color: #F5B60A;
+    padding: 10px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contatos a{
+    text-decoration: none;
+    color: white;
+}
+.contatos li{
+    font-family: century gothic;
+    font-size: 20px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+.contatos img{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+#resultado{
+    font-family: century gothic;
+    color: white;
+}
+.gerarvalor{
+    display: flexbox;
+    align-content: center;
+    align-items: center;
+}
+.gerarvalor button{
+    background-color: #F5B60A;
+    border-style: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    color:#141415;
+    font-family: century gothic;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
 }
 
