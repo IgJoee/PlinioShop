@@ -54,7 +54,7 @@ body{
 
 .banner{
     padding-top: 10px;
-    padding-left: 13px;
+    padding-left: 30px;
     cursor: pointer;
 }
 .carrossel{
@@ -154,7 +154,7 @@ body{
     font-family: century gothic;
     color: #F5B60A;
     padding: 10px;
-    padding-top: 30px;
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -182,6 +182,7 @@ body{
     display: flexbox;
     align-content: center;
     align-items: center;
+    padding: 30px;
 }
 .gerarvalor button{
     background-color: #F5B60A;

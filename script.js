@@ -3,10 +3,16 @@ function gerarValor(){
     document.getElementById("resultado").innerText= "Número Sorteado: " + numero;
 }
 
-let botaotema = document.getElementsByClassName("botao");
-let fundo = document.getElementsByTagName("body");
+function Tema(){
 
-botaotema.addEventListener("click", function(){
-    fundo.style.backgroundColor = "white";
-})
+    let f = window.getComputedStyle(document.body).backgroundColor;
+
+    if (f.includes("255, 255, 255")) {
+        document.body.style.backgroundColor = "#141415";
+    }
+    else{
+        document.body.style.backgroundColor = "white"
+    }
+
+}
 
